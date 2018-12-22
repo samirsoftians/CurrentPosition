@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    android:orientation="vertical"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/mb_header" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp" >
+
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp" >
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:background="#112233"
+            android:text=" Log In "
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp" >
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#112233"
+            android:text="Go Offline"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/mb_footer"
+        android:orientation="vertical" >
+              
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/xxx"
+    android:background="@color/White">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dip"
+        android:weightSum="1">
+
+        <!-- Editext for Search -->
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/inputSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:ems="10"
+            android:layout_weight=".3"
+            android:hint="Search Vehicles...">
+
+            <requestFocus />
+        </MultiAutoCompleteTextView>
+
+       <!-- <com.example.currentpositionapp.ContactsCompletionView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Vehicles..."
+            android:imeOptions="actionDone"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:lineSpacingExtra="1dp"
+            android:nextFocusDown="@+id/editText"
+            android:inputType="text|textNoSuggestions|textMultiLine"
+            android:focusableInTouchMode="true" />
+-->
+
+        <Button
+            android:id="@+id/sendList"
+            android:layout_weight=".7"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:layout_marginRight="5dp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/layer_list_take_followup"
+            android:foreground="@drawable/ripple_button"
+            android:gravity="center"
+            android:text="Go"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+        <!-- android:alpha="0.7" -->
+    </LinearLayout>
+
+    <!-- List View -->
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/White"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>

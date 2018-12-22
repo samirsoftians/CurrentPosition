@@ -1,0 +1,76 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollRegistrationCenter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutHeader"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+
+        <LinearLayout
+            android:id="@+id/layoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="25sp"
+            android:paddingRight="25sp"
+            android:paddingTop="55sp">
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:textColorHint="@color/UIBlue"
+                android:theme="@style/Theme.App.Base"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-light"
+                android:textColorHint="@color/UIBlue"
+                android:theme="@style/Theme.App.Base"
+
+                />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50sp"
+                android:fontFamily="sans-serif-light"
+                android:background="@drawable/layer_list_take_followup"
+                android:foreground="@drawable/ripple_button"
+                android:gravity="center"
+                android:text="login"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+

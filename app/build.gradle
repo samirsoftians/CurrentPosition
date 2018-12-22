@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.example.currentpositionapp"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionName "Currentposition2.0"
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            }
+        }
+    }
+    dependencies
+            {
+                compile 'com.android.support:support-v4:26.1.0'
+              //  compile files('libs/osmdroid-third-party-4.0.jar')
+                compile files('libs/slf4j-android-1.5.8.jar')
+                compile files('libs/OSMBonusPack-v5.8.1-sources(1).jar')
+                compile files('libs/osmdroid-android-4.3.jar')
+                compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+                compile 'com.android.support:appcompat-v7:26.1.0'
+            }
+    dependencies
+            {
+                compile 'com.google.android.gms:play-services-base:8.1.0'
+                compile 'com.google.android.gms:play-services-maps:8.1.0'
+                compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+                implementation 'com.google.code.gson:gson:2.8.2'
+                compile 'com.android.support:cardview-v7:26.1.0'
+                compile 'com.android.support:design:26.1.0'
+                compile project(":library")
+            }
+
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+
+    }
+}
